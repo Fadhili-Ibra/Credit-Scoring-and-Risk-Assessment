@@ -3,7 +3,7 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+#sharpe ratio
 def calculate_sharpe_ratio(returns, risk_free_rate=0):
     excess_returns = returns - risk_free_rate
     return excess_returns.mean() / excess_returns.std() * np.sqrt(252)
